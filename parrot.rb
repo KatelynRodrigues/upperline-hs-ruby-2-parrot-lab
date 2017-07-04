@@ -2,17 +2,27 @@
 def happy_parrot(thing)
   "I am so happy about #{thing}!"
 end
-
+puts happy_parrot("waffles")
 # Boring Parrot - Write a method for a boring parrot that just returns whatever string you give him as an argument.
-
-
+def boringParrot(string)
+    return string
+end
+puts boringParrot("hello")
 
 # Math Parrot - Create a method that accepts two numbers as arguments and adds them together! 
-
+def mathParrot(x,y)
+   return x + y
+  end
+ puts mathParrot(4,6)
 
 
 # Friendly Parrot - This parrot greets people by returning their name and age (don't forget to pass that information in as arguments).
-
+def friendlyParrot()
+    puts "What is your age and name?"
+    result = (gets.chomp).split
+    return ("Your age is #{result[0]} and your name is #{result[1].capitalize}").reverse
+end
+puts friendlyParrot()
 
 
 # Favorites Parrot - Tell this parrot about your three favorite things and he will return "I love <that thing> too!" for each of them.
@@ -20,7 +30,7 @@ end
 
 
 # Now try calling your methods below with any arguments of your choice and puts them to the screen. Like this:
-puts happy_parrot("waffles")
+
 # call your methods here
 
 
